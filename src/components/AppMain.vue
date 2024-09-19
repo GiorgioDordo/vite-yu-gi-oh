@@ -1,23 +1,19 @@
 <script>
-import AppLoader from './AppLoader.vue';
 import AppCards from './AppCards.vue';
 
 export default {
     components: {
-        AppLoader,
-        AppCards
+        AppCards,
     },
   data () {
     return {
-        loaded: true,
     }
   },
 }  
 </script>
 
 <template>
-<AppLoader v-if="!loaded"/>
-<AppCards v-else/>
+   <AppCards />
 </template>
 
 <style lang="scss" scoped>
