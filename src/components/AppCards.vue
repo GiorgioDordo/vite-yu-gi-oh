@@ -37,7 +37,7 @@ export default {
 <template>
   <section class="container-card container p-5">
     <div class="row">
-        <AppCardItem v-for=" cardItem in cardList"  />
+        <AppCardItem v-for=" cardItem in cardList" :key="cardItem.id" :cardObject="cardItem" />
     </div>
   </section>
 </template>
