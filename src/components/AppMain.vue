@@ -16,7 +16,6 @@ export default {
 </script>
 
 <template>
-<h1>MAIN</h1>
 <AppLoader v-if="!loaded"/>
 <AppCards v-else/>
 </template>

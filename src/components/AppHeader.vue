@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-    <header>
+    <header class="mb-5">
         <div class="container d-flex header-container align-items-center">
             <div>
                 <img src="/src/assets/img/Yu-Gi-Oh.jpg" alt="yu-gi-oh">
