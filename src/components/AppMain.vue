@@ -9,6 +9,7 @@ export default {
     },
   data () {
     return {
+        loaded: false,
     }
   },
 }  
@@ -16,8 +17,8 @@ export default {
 
 <template>
 <h1>MAIN</h1>
-<AppLoader />
-<AppCards />
+<AppLoader v-if="!loaded"/>
+<AppCards v-else/>
 </template>
 
 <style lang="scss" scoped>
