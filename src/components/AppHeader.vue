@@ -12,7 +12,7 @@ export default {
     <header>
         <div class="container d-flex header-container align-items-center">
             <div>
-                <img src="/src/assets/img/Yu-Gi-Oh!_(Logo).jpg" alt="yu-gi-oh">
+                <img src="/src/assets/img/Yu-Gi-Oh.jpg" alt="yu-gi-oh">
             </div>
             <div>
                 <h1>YU-GI-OH CARDS</h1>
@@ -22,11 +22,15 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.header-container {
+header {
+    background-color: white;
+    .header-container {
+
     height: 100px;
     
     img {
         height: 80px;
     }
+}
 }
 </style>

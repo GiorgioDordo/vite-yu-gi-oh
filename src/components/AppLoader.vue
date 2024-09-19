@@ -9,14 +9,11 @@ export default {
 </script>
 
 <template>
+<!-- This card loader was taken from: https://christopherkade.com/posts/css-card-flip -->
 <div class="card-wrapper">
-    <div class="card-wrapper">
-    <img class="card" src="/src/assets/img/" alt="" />
-    <img class="card card-back" src="back.jpg" alt="" />
+    <img class="card" src="/src/assets/img/front.jpg" alt="" />
+    <img class="card card-back" src="/src/assets/img/back.jpg" alt="" />
 </div>
-
-</div>
-
 </template>
 
 <style lang="scss" scoped>
@@ -36,15 +33,20 @@ export default {
   position: relative;
   transform-style: preserve-3d;
   animation: cardFlip 3s ease-in-out infinite;
-  width: 100px;
-  height: 150px;
+  width: 170px;
+  height: 255px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .card {
   position: absolute;
   backface-visibility: hidden;
-  width: 100px;
-  height: 150px;
+  width: 170px;
+  height: 255px;
 }
 
 .card-back {
