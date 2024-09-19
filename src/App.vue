@@ -1,25 +1,25 @@
-<script setup>
-import AppHeader from './components/AppHeader.vue'
-import AppMain from './components/AppMain.vue'
+<script>
+import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
 
 export default {
   data () {
     return {
     }
   },
-  components: [
+  components: {
     AppHeader,
     AppMain
-  ]
+  }
 }
 </script>
 
 <template>
-<AppHeader />
-<AppMain />
+  <AppHeader />
+  <AppMain />
 </template>
 
-<style lang="scss" scoped>
-@use '../node_modules/bootstrap/scss/bootstrap.scss'
-@use './general.scss'
+<style lang="scss">
+@use '../node_modules/bootstrap/scss/bootstrap.scss' as *;
+@use './general.scss' as *;
 </style>
