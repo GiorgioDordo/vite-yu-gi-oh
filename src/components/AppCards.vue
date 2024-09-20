@@ -8,7 +8,6 @@ export default {
     return {
             cardList: [],
             apiUrl: 'https://db.ygoprodeck.com/api/v7/cardinfo.php?',
-            loaded: false,
     }
   },
   methods: {
