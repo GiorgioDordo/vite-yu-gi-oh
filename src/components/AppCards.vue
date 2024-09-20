@@ -7,27 +7,30 @@ export default {
   data () {
     return {
             cardList: [],
-            apiUrl: 'https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0',
+            apiUrl: 'https://db.ygoprodeck.com/api/v7/cardinfo.php?',
             loaded: false,
     }
   },
   methods: {
 
     getCards() {
-
-setTimeout(() => {
-
-      axios.get(this.apiUrl)
+      axios.get(this.apiUrl, {
+        params: {
+          num:35,
+          offset: 0,
+        }
+      })
         .then((response) => {
           console.log(response.data.data);
           this.cardList = response.data.data;
         })
         .catch(function (error) {
           console.log(error);
+        })
+        .finally(() => {
+          this.loading = false;
+          console.log("Chiamata API terminata")
         });
-
-      },5000);
-
     }
   },
 
@@ -39,6 +42,10 @@ setTimeout(() => {
   created() {
     this.getCards();
   },
+
+  created() {
+    setTimeout(this.getCards, 5000);
+  }
 }  
 </script>
 

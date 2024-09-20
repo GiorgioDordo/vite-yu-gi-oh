@@ -30,6 +30,7 @@ export default {
 <style lang="scss" scoped>
 .card-bigger:hover {
   // position: absolute;
+  cursor: pointer;
   transform: scale(2.5);
   transition: transform 1s;
   z-index: 1;
