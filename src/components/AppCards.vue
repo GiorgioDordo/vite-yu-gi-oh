@@ -38,17 +38,20 @@ setTimeout(() => {
 
   created() {
     this.getCards();
-  }
+  },
 }  
 </script>
 
 <template>
-  <AppLoader v-if="cardList.length === 0"/>
-  <section class="container-card container p-5" v-else>
+  <div class="container">
+  <AppLoader v-if="cardList.length === 0" class="m-auto"/>
+  <section class="container-card p-5 d-flex flex-column" v-else>
+    <h1 class="align-self-center mb-5"><strong>Cards:</strong>{{cardList.length}}</h1>
     <div class="row">
-        <AppCardItem v-for=" cardItem in cardList" :key="cardItem.id" :cardObject="cardItem" />
+        <AppCardItem v-for=" cardItem in cardList" :key="cardItem.id" :cardObject="cardItem" class="mb-4" />
     </div>
   </section>
+  </div>
 </template>
 
 <style lang="scss" scoped>

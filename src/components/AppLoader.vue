@@ -38,7 +38,7 @@ export default {
 
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 44%;
   transform: translate(-50%, -50%);
 }
 

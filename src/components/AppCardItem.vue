@@ -18,7 +18,7 @@ export default {
     <article class="card w-100">
         <img :src=" cardObject.card_images[0].image_url " class="card-img-top" alt="...">
         <div class="card-body">
-            <p class="card-text">{{ cardObject.name }}</p>
+            <p class="card-text"><strong>Name:</strong>{{ cardObject.name }}</p>
         </div>
     </article>
 </div>
