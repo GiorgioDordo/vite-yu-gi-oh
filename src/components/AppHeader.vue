@@ -11,12 +11,9 @@ export default {
 <template>
     <header class="mb-5">
         <div class="container d-flex header-container align-items-center">
-            <div>
                 <img src="/src/assets/img/Yu-Gi-Oh.jpg" alt="yu-gi-oh">
-            </div>
-            <div>
+
                 <h1>YU-GI-OH CARDS</h1>
-            </div>
         </div>
     </header>
 </template>
@@ -24,13 +21,12 @@ export default {
 <style lang="scss" scoped>
 header {
     background-color: white;
-    .header-container {
+    max-height: 100px;
 
-    height: 100px;
-    
-    img {
-        height: 80px;
+        img {
+        max-height: 80px;
+        max-width: 226px;
+
     }
-}
 }
 </style>

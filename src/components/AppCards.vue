@@ -16,7 +16,7 @@ export default {
     getCards() {
       axios.get(this.apiUrl, {
         params: {
-          num:35,
+          num:36,
           offset: 0,
         }
       })

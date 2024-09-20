@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-<div class="col-6 col-lg-3">
+<div class="col-6 col-md-3 col-lg-2">
     <article class="card w-100">
         <img :src=" cardObject.card_images[0].image_url " class="card-img-top card-bigger" alt="...">
         <div class="card-body">
