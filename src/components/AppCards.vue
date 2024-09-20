@@ -8,17 +8,17 @@ export default {
   data () {
     return {
             cardList: [],
-            apiUrl: 'https://db.ygoprodeck.com/api/v7/cardinfo.php?',
+            apiUrl: 'https://db.ygoprodeck.com/api/v7/cardinfo.php',
     }
   },
   methods: {
 
-    getCards( query = "" ) {
+    getCards( archetype = "" ) {
       axios.get(this.apiUrl, {
         params: {
           // num: 36,
           // offset: 0,
-          archetype: query
+          archetype: archetype
         }
       })
         .then((response) => {
