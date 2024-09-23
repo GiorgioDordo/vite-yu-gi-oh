@@ -14,11 +14,12 @@ export default {
   },
   methods: {
 
-    getCards () {
+    getCards (archetypesFilter = null) {
       axios.get(this.apiUrl, {
         params: {
           num: 36,
           offset: 0,
+          archetype: archetypesFilter,
         }
       })
         .then((response) => {
@@ -36,6 +37,7 @@ export default {
 
     showInfo(info) {
       console.log( `arrived to apCards this message: ${info}`);
+      this.getCards(info);
     }
     // searchCardArchetype(searchedInput) {
     // console.log(searchedInput);
