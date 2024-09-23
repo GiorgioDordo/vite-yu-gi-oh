@@ -10,7 +10,7 @@ export default {
 
 <template>
 <!-- This card loader was taken from: https://christopherkade.com/posts/css-card-flip -->
-<div class="card-wrapper">
+<div class="card-wrapper d-flex justify-content-center">
     <img class="card" src="/src/assets/img/front.jpg" alt="" />
     <img class="card card-back" src="/src/assets/img/back.jpg" alt="" />
 </div>
