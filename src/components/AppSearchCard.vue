@@ -45,7 +45,7 @@ export default {
 </script>
 
 <template>
-  <div class="form-imput-group">
+  <div class="form-imput-group mb-5">
     <select class="form-select" @change="logMessage(selectedItem)" v-model="selectedItem">
               <option v-for="(archetype, index) in archetypes" :key="index" :value="archetype.archetype_name">
                 {{ archetype.archetype_name }}

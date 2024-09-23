@@ -35,7 +35,7 @@ export default {
         });
     },
 
-    showInfo(info) {
+    newCardList(info) {
       console.log( `arrived to apCards this message: ${info}`);
       this.getCards(info);
     }
@@ -66,7 +66,7 @@ export default {
   <div class="container">
     <AppLoader v-if="loading" class="m-auto"/>
     <section class="container-card p-5 d-flex flex-column" v-else>
-        <AppSearchCard @archetypeSearch="showInfo" />
+        <AppSearchCard @archetypeSearch="newCardList" />
         <h1 class="align-self-center mb-5"><strong>Cards:</strong>{{cardList.length}}</h1>
         <div class="row">
             <AppCardItem v-for=" cardItem in cardList" :key="cardItem.id" :cardObject="cardItem" class="mb-4" />
